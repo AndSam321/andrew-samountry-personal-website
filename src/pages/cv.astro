@@ -1,0 +1,136 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Learn more about me!" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    Originating from Northwest Arkansas, I carry a deep-seated passion for innovation and its capacity to reshape our world. 
+    With a keen interest in full-stack development and AI, I plan on continuing my education in Georgia Tech's MSCS program. 
+    I'm currently open for opportunties in SWE internships and other mentorships. I am also a part of Simpson College's nationally recognized Speech & Debate Team.
+    Beyond coding and academics, I love trying new foods and practicing my pit master skills (barbecuing). I like listening to K-Pop and watching the Bears and Timberwolves play.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement title="Simpson College - B.A. in Computer Science" subtitle="August 2021 - Present, Indianola, IA">
+      <p><i>Relevent Coursework: Data Structures & OOP, Database Systems & SQL, Introduction to Programming: Python, Data Modeling, CMSC 390: Problem Solving</i> </p>
+    </TimeLineElement>
+  
+    <TimeLineElement title="Har-Ber High School - High School Diploma" subtitle="August 2018 - May 2021, Springdale, AR">
+      <p><b>GPA: 3.89 ACT: 33</b> <span style="margin-right: 10px;"></span><p><i>Honors: National Speech and Debate Semi-Finalist, Arkansas State Speech Champion, AP Scholar</i></p></p>
+    </TimeLineElement>
+
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement title="IT Help Desk Attendant @ Simpson College" subtitle="August 2021 - May 2022, Indianola, IA">
+      <style>
+        ul {
+          list-style-type: disc;
+          padding-left: 20px;
+        }
+      </style>
+      <ul>
+        <li>Provided IT software and hardware support and resources to over 1000 students and faculty across campus </li>
+        <li>Efficiently managed a team of  5 peers in the department to coordinate efforts to assist with technical problems and scheduling 
+          tasks </li>
+      </ul>
+      </TimeLineElement>
+
+    <TimeLineElement title="General Manager @ Bee's Style: Egg Rolls & Fried Rice" 
+    subtitle="March 2018 - August 2021, Fayetteville, AR">
+      <style>
+        ul {
+          list-style-type: disc;
+          padding-left: 20px;
+        }
+      </style>
+      <ul>
+        <li>Spearheaded management projects and business strategies to shift to 
+          customer-focused initiatives, increasing sales by 100% in one 
+          year</li>
+        <li>Managed creation, strategy, and execution of short form digital marketing 
+          content across all social media channels, amassing 
+          1000+ followers on all platforms</li>
+      </ul>
+    
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="Online Fulfillment @ Walmart"subtitle="May 2022 - August 2023">
+      <style>
+        ul {
+          list-style-type: disc;
+          padding-left: 20px;
+        }
+      </style>
+      <ul>
+        <li>Processed and fulfilled over 100 online orders a day, ensuring accuracy of purchases and overall positive front/backend customer 
+          experience  </li>
+        <li>Collaborated with store management to identify priorities, deadlines, and expectations for everyday business tasks</li>
+      </ul>
+    </TimeLineElement>
+  </div>
+
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Awards/Certificates</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <a href="https://drive.google.com/file/d/1zp-kOBAAAWUTedwC_c6TttKELMjhNiUK/view?usp=sharing" target="_blank"> JPMorgan Chase & Co. Software Engineering Virtual Intern Experience Certificate (with link)</a>
+    </li>
+    <li>
+      <a href="https://simpson.edu/academics/beyond-classroom/speech-and-debate" target="_blank"> Pi Kappa Delta National Champion 2021/2022</a>
+    </li>
+    <li>
+      <a href="https://github.com/AndSam321/Vet-U" target="_blank"> BuildDSM V1 Hackaton Winner (Best Pitch/Demo) - Second Overall out of 200+ Participants</a>
+    </li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6">
+    <li>Python (Proficient)</li>
+    <li>Java (Proficient)</li>
+    <li>HTML/CSS/JS (Proficient)</li>
+    <li>SQL (Proficient)</li>
+    <li>Django (Proficient)</li>
+    <li>R (Proficient)</li>
+    <li>Flask (Proficient)</li>
+    <li>C++ (Basic)</li>
+    <li>ReactJS (Basic)</li>
+    <li>Node.JS (Basic)</li>
+    <li>Golang (Basic)</li>
+    <li>English (Fluent)</li>
+    <li>Lao (Fluent)</li>
+    <li>Spanish (Elementary)</li>
+  </ul>
+
+  <style>
+    .skills-section {
+      margin-bottom: 20px; /* Adjust this value as needed */
+    }
+  </style>
+  
+  <div class="mb-5 skills-section">
+    <div class="text-3xl w-full font-bold">Resume</div>
+    <a href="https://drive.google.com/file/d/1WFMOteqxELHtaoMOfCacBzWLPlGdyJ3n/view?usp=sharing" target="_blank"> <br>Click here for my resume!</a></a>
+  </div>
+  
+</BaseLayout>

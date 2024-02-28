@@ -1,0 +1,55 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+---
+
+<BaseLayout title = "Projects" sideBarActiveItemID="projects">
+  <div>
+    <div class="text-3xl w-full font-bold mb-5">Latest Projects</div>
+  </div>
+
+  <HorizontalCard
+    title="Vet-U"
+    img="/vet-u.webp"
+    desc="**Won BuildDSM V1 Hackathon for Best Pitch/Demo - Second Place Overall** VetU is an AI/ML powered application for veterinary telehealth designed to assist pet owners in assessing their pets' health conditions remotely. The application utilizes image recognition technology, AI analysis, and access to veterinary resources to provide preliminary diagnoses and recommend appropriate actions."
+    url="https://github.com/AndSam321/Vet-U"
+    badge="NEW - ML/AI"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="K-Pop Universe"
+    img="/kpop.webp"
+    desc="Created a Full-stack web application akin to Reddit and Discord, providing a chat platform for K-Pop enthusiasts. Implemented a REST API using Django framework, with SQLLITE, to handle user-generated posts and interactions "
+    url="https://github.com/AndSam321/kpop-universe"
+    badge="Django"
+  />
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Other Projects</div>
+  </div>
+
+  <HorizontalCard
+    title="Bears Tracker"
+    img="/bears.webp"
+    desc="Creating data visualizations and analysis to track Chicago Bears stats over time for use in future NFL Drafts. Using Python and the NFL API."
+    url="#"
+    badge="Web Scraping - In Progress"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="JPMorgan Chase & Co. Software Engineering Intern Virtual Experience"
+    img="/JP.webp"
+    desc="Fixed broken files in the repository to make web application output correctly. Used JPMC open source library called Perspective to generate a live graph that displays a data feed in a clear and visually appealing way for traders to monitor. "
+    url="https://drive.google.com/file/d/1zp-kOBAAAWUTedwC_c6TttKELMjhNiUK/view?usp=sharing"
+    badge="Python, Typescipt"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Valentine's Asker"
+    img="/Valen.webp"
+    desc="Created a Valentine's asker for my girlfriend. She said yes because of it :) "
+    url="https://andsam321.github.io/forrachel/"
+    badge="HTML/CSS, Sweet Talk"
+  />
+</BaseLayout>
+
