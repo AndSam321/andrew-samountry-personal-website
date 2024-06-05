@@ -24,6 +24,15 @@ import HorizontalCard from "../components/HorizontalCard.astro";
     badge="Python, Sci-kit Learn, Streamlit"
   />
 
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Wordle Solver"
+    img="/wordle.webp"
+    desc="Started off as a fun side project as my girlfriend always beats me in Wordle. Utilizes Random Forest Classifier to predict the correct word in the Wordle game. The model is trained on a dataset of up to 14,000 words. Need to optimize it to handle more words as it is currently limited to only 100-300 word limits at a time."
+    url="https://github.com/AndSam321/wordle_solver"
+    badge="Python, Sci-Kit Learn"
+  />
+
   <div>
     <div class="text-3xl w-full font-bold mb-5 mt-10">Other Projects</div>
   </div>
@@ -46,19 +55,19 @@ import HorizontalCard from "../components/HorizontalCard.astro";
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Valentine's Asker"
-    img="/Valen.webp"
-    desc="Created a Valentine's asker for my girlfriend. She said yes because of it :) "
-    url="https://andsam321.github.io/forrachel/"
-    badge="HTML/CSS, Sweet Talk"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
     title="Etch-A-Sketch"
     img="/etchasketch.webp"
     desc="Simple Etch-A-Sketch game using HTML, CSS, and JS."
     url="https://andsam321.github.io/etchASketch/"
     badge="HTML,CSS,JS"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Asian Bros React"
+    img="/thumbnail.webp"
+    desc="My cousin and I started a YouTube channel reacting to different music and K-Pop videos. Amassed over 1,000 subscribers and 100,000 views."
+    url="https://www.youtube.com/@AsianBrosReact"
+    badge="Passion Project, Marketing"
   />
 </BaseLayout>
 
