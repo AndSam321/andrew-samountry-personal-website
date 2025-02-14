@@ -7,7 +7,7 @@ import HorizontalCard from "../components/HorizontalCard.astro";
   <div>
     <div class="text-3xl w-full font-bold mb-5">Latest Projects</div>
   </div>
-
+  <div class="divider my-0"></div>
   <HorizontalCard
     title="Vet-U"
     img="/vet-u.webp"
@@ -17,14 +17,42 @@ import HorizontalCard from "../components/HorizontalCard.astro";
   />
   <div class="divider my-0"></div>
   <HorizontalCard
+    title="Thunder Thrift"
+    img="/ThunderThrift.png"
+    desc="Thunder Thrift is Simpson College's first online student marketplace. It allows users to buy and sell items in a secure environment. I'm working on it for my Senior Capstone project."
+    url="https://github.com/AndSam321/ThunderThrift"
+    badge="React, Django, Azure"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Stride Sync"
+    img="/stridesync.webp"
+    desc="Stride Sync is a web application that allows users to input their health data and receive a generated music playlist to match their BPM."
+    url="https://github.com/AndSam321/StrideSync"
+    badge="Javascript, Express, Spotify API"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Andrew and Rachel's Blog"
+    img="/andrewandrachel.webp"
+    desc="Created a blog for my girlfriend and I to share our thoughts and experiences. I used this project as a way to learn more about React and TailwindCSS."
+    url="https://github.com/AndSam321/"
+    badge="React, Django"
+  />
+
+  <div class="divider my-0"></div>
+
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Other Projects</div>
+  </div>
+  <HorizontalCard
     title="Chicago Bears Stat Tracker"
     img="/bears.webp"
     desc="Supervised Machine Learning algorithm written in Python/Sci-Kit Learn to predict the outcome of Chicago Bears games. Utilized data visualization libraries such as Matplotlib and Seaborn to create interactive visualizations of the data. Deployed the model using Streamlit to create a user-friendly web application for users to interact with the model and view the predictions."
     url="https://bearstracker.streamlit.app/"
     badge="Python, Sci-kit Learn, Streamlit"
   />
-
-  <div class="divider my-0"></div>
   <HorizontalCard
     title="Wordle Solver"
     img="/wordle.webp"
@@ -32,10 +60,6 @@ import HorizontalCard from "../components/HorizontalCard.astro";
     url="https://github.com/AndSam321/wordle_solver"
     badge="Python, Sci-Kit Learn"
   />
-
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Other Projects</div>
-  </div>
   <HorizontalCard
     title="K-Pop Universe"
     img="/kpop.webp"
