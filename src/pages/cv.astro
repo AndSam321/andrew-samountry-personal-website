@@ -4,22 +4,50 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 ---
 
 <BaseLayout title="Learn more about me!" sideBarActiveItemID="cv">
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Profile</div>
+  <div class="mb-10 text-justify space-y-8">
+  <div class="flex items-start gap-4">
+    <div class="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center mt-1">
+      <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"/>
+        <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"/>
+      </svg>
+    </div>
+    <p>
+      Originating from Northwest Arkansas, I carry a deep-seated passion for innovation and its capacity to reshape our world. As a recent graduate with a B.A. in Computer Science from Simpson College, I'm excited to continue my journey in full-stack development and AI. I'm currently working as a Software Developer at Merchant's Bonding Company while preparing for Georgia Tech's MSCS program to further advance my technical expertise.
+    </p>
   </div>
 
-  <div class="mb-10 text-justify">
-    Originating from Northwest Arkansas, I carry a deep-seated passion for innovation and its capacity to reshape our world. 
-    With a keen interest in full-stack development and AI, I plan on continuing my education in Georgia Tech's MSCS program. 
-    I'm currently open for opportunties in SWE internships and other mentorships. I am also a part of Simpson College's nationally recognized Speech & Debate Team.
-    Beyond coding and academics, I love trying new foods and practicing my pit master skills (barbecuing). I like listening to K-Pop and watching the Bears and Timberwolves play.
+  <div class="flex items-start gap-4">
+    <div class="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-green-500 to-teal-500 rounded-full flex items-center justify-center mt-1">
+      <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/>
+      </svg>
+    </div>
+    <p>
+      During my time at Simpson College, I was proud to be part of the nationally recognized Speech & Debate Team, where I developed strong communication and analytical skills that complement my technical abilities. Now as I transition into my professional career, I'm eager to tackle challenging projects and contribute to innovative solutions in the tech industry.
+    </p>
   </div>
+
+  <div class="flex items-start gap-4">
+    <div class="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center mt-1">
+      <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/>
+      </svg>
+    </div>
+    <p>
+      Beyond coding and work, I love trying new foods and practicing my pit master skills (barbecuing). I enjoy listening to K-Pop and cheering on the Bears and Timberwolves during game season.
+    </p>
+  </div>
+</div>
 
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Education</div>
   </div>
 
   <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement title="Georgia Institute of Technology - Master of Computer Science" subtitle="August 2025 - Present, Atlanta, GA">
+      <p><i>Specialiation: Machine Learning</i> </p>
+    </TimeLineElement>
     <TimeLineElement title="Simpson College - B.A. in Computer Science" subtitle="August 2021 - Present, Indianola, IA">
       <p><i>Data Structures & OOP, Algorithms, Databases Systems & SQL, Artificial Intelligence, Software Engineering, Human Computer Interaction, Introduction to Programming: Python, Data Modeling in R</i> </p>
     </TimeLineElement>
@@ -35,21 +63,16 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
   </div>
 
   <div class="time-line-container mb-10">
-    <TimeLineElement title="Incoming Developer Intern @ Merchant's Bonding Company" subtitle="Summer 2025, Des Moines, IA">
+    <TimeLineElement title="Software Engineer Intern @ Merchant's Bonding Company" subtitle="Summer 2025, Des Moines, IA">
 
     </TimeLineElement>
-    <TimeLineElement title="Software Engineering Intern @ Dance4Healing" subtitle="Jun 2024 - Sep 2024, Sunnyvale, CA (Remote)">
+    <TimeLineElement title="Software Engineer Intern @ Dance4Healing" subtitle="Jun 2024 - Sep 2024, Sunnyvale, CA (Remote)">
       <style>
         ul {
           list-style-type: disc;
           padding-left: 20px;
         }
       </style>
-      <ul>
-        <li>Engineered and tested web application, delivering personalized dance routines for over 1,000 cancer patients, enabling real-time group participation, fostering collaboration with Stanford Healthcare</li>
-        <li>Explored and began incorporating Natural Language Processing (NLP) to generate accurate, real-time captions during live sessions, improving accessibility for users </li>
-        <li>Utilized JavaScript/React to create interactive and user-friendly interfaces, improving the overall performance and engagement of the application</li>
-      </ul>
       </TimeLineElement>
 
     <TimeLineElement title="IT Support Specialist (Help Desk) @ Simpson College" 
@@ -59,13 +82,7 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
           list-style-type: disc;
           padding-left: 20px;
         }
-      </style>
-      <ul>
-        <li>Provided IT software and hardware support to over 1000 students and faculty across campus</li>
-        <li>Managed team of 3 to ensure timely resolution of IT issues, regularly conducting team meetings to discuss priorities and challenges to maximize efficiency and productivity.</li>
-        <li>Worked on tickets using Simpson’s ticketing system to effectively provide documentation, while also taking advantage of knowledge base articles to supplement troubleshooting and research</li>
-      </ul>
-    
+      </style> 
     </TimeLineElement>
 
     <TimeLineElement
@@ -76,11 +93,6 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
           padding-left: 20px;
         }
       </style>
-      <ul>
-        <li>Assisted peers in finding and practicing their speech and debate events by providing feedback on a bi-weekly basis</li>
-        <li>Established structured curriculum for speech workshops, tailored to individual levels and event preferences</li>
-        <li>Organized additional practice sessions to foster a collaborative team environment, contributing to multiple national finalist</li>
-      </ul>
     </TimeLineElement>
   </div>
 
@@ -94,35 +106,146 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
       <a href="https://drive.google.com/file/d/1zp-kOBAAAWUTedwC_c6TttKELMjhNiUK/view?usp=sharing" target="_blank"> JPMorgan Chase & Co. Software Engineering Virtual Intern Experience Certificate (with link)</a>
     </li>
     <li>
-      <a href="https://simpson.edu/academics/beyond-classroom/speech-and-debate" target="_blank"> Pi Kappa Delta National Champion 2021/2022</a>
+      <a href="https://simpson.edu/academics/beyond-classroom/speech-and-debate" target="_blank"> Pi Kappa Delta National Champion 2022/2023</a>
     </li>
     <li>
       <a href="https://github.com/AndSam321/Vet-U" target="_blank"> BuildDSM V1 Hackathon Winner (Best Pitch/Demo) - Second Overall out of 200+ Participants</a>
     </li>
   </ul>
 
-  <div class="mb-5">
+<div class="mb-5">
     <div class="text-3xl w-full font-bold">Skills</div>
   </div>
-
-  <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>Python (Proficient)</li>
-    <li>Java (Proficient)</li>
-    <li>HTML/CSS/JS (Proficient)</li>
-    <li>SQL (Proficient)</li>
-    <li>Django (Proficient)</li>
-    <li>R (Proficient)</li>
-    <li>Flask (Proficient)</li>
-    <li>C++ (Basic)</li>
-    <li>ReactJS (Basic)</li>
-    <li>Node.JS (Basic)</li>
-    <li>Golang (Basic)</li>
-    <li>English (Fluent)</li>
-    <li>Lao (Fluent)</li>
-    <li>Spanish (Elementary)</li>
-  </ul>
+  <div class="skills-carousel-container mb-10">
+    <div class="skills-carousel">
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+        <span>Python</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+        <span>Java</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+        <span>React</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+        <span>JavaScript</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+        <span>HTML5</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+        <span>CSS3</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" />
+        <span>SQL</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" />
+        <span>Django</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" alt="R" />
+        <span>R</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" />
+        <span>Flask</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" alt="Ruby" />
+        <span>Ruby</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-original-wordmark.svg" alt="Rails" />
+        <span>Rails</span>
+      </div>
+    </div>
+  </div>
 
   <style>
+    .skills-carousel-container {
+      overflow: hidden;
+      width: 100%;
+      position: relative;
+      background: linear-gradient(90deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 50%, rgba(255,255,255,0.1) 100%);
+      border-radius: 12px;
+      padding: 20px 0;
+    }
+
+    .skills-carousel {
+      display: flex;
+      animation: scroll 20s linear infinite;
+      gap: 2rem;
+      width: max-content;
+    }
+
+    .skill-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-width: 100px;
+      padding: 1rem;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .skill-item:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    .skill-item img {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 0.5rem;
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+    }
+
+    .skill-item span {
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-align: center;
+      color: inherit;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+    .skills-carousel-container:hover .skills-carousel {
+      animation-play-state: paused;
+    }
+    @media (max-width: 768px) {
+      .skills-carousel {
+        animation-duration: 15s;
+      }
+      
+      .skill-item {
+        min-width: 80px;
+        padding: 0.75rem;
+      }
+      
+      .skill-item img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
     .skills-section {
       margin-bottom: 20px; 
     }
@@ -130,14 +253,8 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
   
   <div class="mb-5 skills-section">
     <div class="text-3xl w-full font-bold">Resume</div>
-    <a href="/Andrew_Samountry_Resume.pdf" target="_blank">
+    <a href="/Andrew_Samountry_Resume_2025.pdf" target="_blank">
       <br><strong>Click here for my resume!</strong>
     </a>
   </div>
-
-  <div class="mb-5 section">
-    <div class="text-3xl w-full font-bold">Git here</div>
-    <a href="https://github.io/u/andsam321/"></a>
-  </div>
-  
 </BaseLayout>
